@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Travel App - Explorador de Destinos Turísticos
 
-## Getting Started
+Aplicación web moderna para la exploración de destinos turísticos desarrollada con **Next.js 16+**, **App Router** y **Supabase** como backend serverless.
 
-First, run the development server:
+## 🚀 Descripción del Proyecto
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Esta plataforma permite a los usuarios descubrir diferentes destinos turísticos organizados por categorías. Implementa renderizado en el servidor (Server Components) para consultar datos de forma eficiente, rutas dinámicas para detalles de productos y categorías, y un diseño responsive estilizado con Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Funcionalidades principales:
+- **Landing Page Dinámica:** Muestra el catálogo de destinos consultados en tiempo real desde Supabase.
+- **Rutas Dinámicas (`/destinos/[id]`):** Vista detallada de cada lugar con descripción, ubicación y precios.
+- **Filtrado Dinámico (`/categorias/[slug]`):** Agrupación de destinos según su tipo (Playa, Montaña, Ciudad, etc.).
+- **Serverless Backend:** Persistencia de datos gestionada con PostgreSQL en Supabase y políticas RLS configuradas.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologías Utilizadas
 
-## Learn More
+- **Framework:** Next.js 16+ (App Router)
+- **Lenguaje:** TypeScript
+- **Base de Datos & Backend:** Supabase (PostgreSQL serverless)
+- **Estilos:** Tailwind CSS
+- **Despliegue:** Vercel
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔑 Variables de Entorno
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Para ejecutar este proyecto de forma local o desplegarlo en Vercel, es necesario configurar las siguientes variables de entorno. 
 
-## Deploy on Vercel
+Crea un archivo `.env.local` en la raíz del proyecto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://ryhkhimxbqctbfezwieq.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ5aGtoaW14YnFjdGJmZXp3aWVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAwNTkxOTMsImV4cCI6MjEwNTYzNTE5M30.FKh4Ci8FxFFJSbh4USsjwy-X_fcOuhjPbiSQomXa_zA
