@@ -1,5 +1,6 @@
 import { createClient } from '../lib/supabase/server';
 import Link from 'next/link';
+export const revalidate = 0;
 
 export default async function HomePage() {
   const supabase = await createClient();
